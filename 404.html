@@ -20,12 +20,12 @@ permalink: /404.html
 
   // Check if the path is '/~kmbae' or '/~kmbae/'
   if (path === '/~kmbae' || path === '/~kmbae/') {
-      // Redirect to '/kmbae'a
-    document.getElementById('notfound').innerHTML = 'Redirecting to /kmbae';
-    window.location.replace('https://sv.postech.ac.kr/kmbae')};
-  else {
+      // Redirect to '/kmbae'
+      document.getElementById('notfound').innerHTML = 'Redirecting to /kmbae';
+      window.location.replace('https://sv.postech.ac.kr/kmbae');
+  } else {
       // Redirect to others
-    document.getElementById('notfound').innerHTML = 'Redirecting to /' + path;
-    window.location.replace('https://sv.postech.ac.kr/' + path);
+      document.getElementById('notfound').innerHTML = 'Redirecting to /' + path;
+      window.location.replace('https://sv.postech.ac.kr/' + path);
   }
 </script>
