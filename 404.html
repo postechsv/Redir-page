@@ -23,5 +23,9 @@ permalink: /404.html
       // Redirect to '/kmbae'a
     document.getElementById('notfound').innerHTML = 'Redirecting to /kmbae';
     window.location.replace('https://sv.postech.ac.kr/kmbae');
+  else {
+      // Redirect to others
+    document.getElementById('notfound').innerHTML = 'Redirecting to /' + path;
+    window.location.replace('https://sv.postech.ac.kr/' + path);
   }
 </script>
